@@ -1,39 +1,140 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuerciVox - The Voice Master</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>GUERCIVOX</h1>
-        <p>The Voice Master</p>
-    </header>
-    <main>
-        <section>
-            <h2>Bienvenido a GuerciVox</h2>
-            <p>Tu destino definitivo para el dominio profesional de la voz y la excelencia en audio.</p>
-        </section>
-        <section class="contact-section">
-            <h2>Contáctanos</h2>
-            <form class="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 GuerciVox. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #161616;
+    padding: 30px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffcc00;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Sección Principal */
+main {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Sección de Bienvenida */
+section {
+    background-color: #202020;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Formulario de Contacto */
+.contact-section {
+    margin-top: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+    align-self: flex-start;
+    color: #ffcc00;
+    font-size: 1.1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #ffcc00;
+    background-color: #262626;
+    color: #ffffff;
+    font-size: 1.1em;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e6b800;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Pie de Página */
+footer {
+    margin-top: 80px;
+    padding: 25px;
+    background-color: #161616;
+    border-radius: 12px;
+    font-size: 1.1em;
+}
+
+footer p {
+    color: #ffcc00;
+    font-weight: bold;
+    opacity: 0.8;
+}
