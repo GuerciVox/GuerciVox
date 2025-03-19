@@ -1,4 +1,4 @@
-/* General Styles */
+/* Estilos Generales */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* Header */
+/* Encabezado */
 header {
     background-color: #1f1f1f;
     padding: 20px;
@@ -30,7 +30,7 @@ p {
     margin-top: 5px;
 }
 
-/* Main Section */
+/* Sección Principal */
 main {
     margin: 40px auto;
     max-width: 800px;
@@ -45,7 +45,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Welcome Section */
+/* Sección de Bienvenida */
 section {
     background-color: #252525;
     padding: 20px;
@@ -54,7 +54,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* Contact Form */
+/* Formulario de Contacto */
 .contact-section {
     margin-top: 30px;
 }
@@ -106,7 +106,7 @@ section {
     background-color: #e6b800;
 }
 
-/* Footer */
+/* Pie de Página */
 footer {
     margin-top: 60px;
     padding: 20px;
