@@ -19,13 +19,13 @@ header {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 3em;
     color: #ffcc00;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
@@ -58,11 +58,12 @@ section {
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
     margin-bottom: 30px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 section:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
 }
 
 /* Formulario de Contacto */
@@ -103,6 +104,7 @@ section:hover {
 .contact-form textarea:focus {
     border-color: #e6b800;
     outline: none;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
 
 .contact-form textarea {
@@ -118,12 +120,13 @@ section:hover {
     cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
     width: 100%;
 }
 
 .contact-form button:hover {
     background-color: #e6b800;
+    transform: scale(1.05);
 }
 
 /* Pie de Página */
